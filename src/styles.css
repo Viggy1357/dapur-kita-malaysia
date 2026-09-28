@@ -527,3 +527,41 @@ footer .container > span { margin-left: auto; color: #8e9892; font-size: 9px; }
   .impact-method button { width: 100%; }
   .add-pantry-row { grid-template-columns: 1fr; }
 }
+
+/* ── New in enhanced build ── */
+.command-hints { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; padding: 10px; border: 1px solid #d4dcd6; border-radius: 12px; background: white; }
+.hint-chip { padding: 5px 10px; border: 1px solid #d6ddd6; border-radius: 8px; background: #f5f7f2; color: #40534a; font-size: 11px; font-weight: 600; cursor: pointer; transition: .15s; }
+.hint-chip:hover { border-color: var(--green); color: var(--green); background: #edf3e8; }
+
+.confirm-modal { width: min(480px, 100%); }
+
+.primary-button.danger { border-color: #c0392b; background: #c0392b; }
+.primary-button.danger:hover { background: #a93226; }
+
+.export-buttons { display: flex; gap: 9px; flex-wrap: wrap; }
+.export-buttons .secondary-button { min-height: 45px; }
+
+.details-chevron { flex-shrink: 0; color: #88938d; transition: transform .2s; }
+details[open] .details-chevron { transform: rotate(180deg); }
+
+@media (max-width: 620px) {
+  .export-buttons { width: 100%; flex-direction: column; }
+  .export-buttons button { width: 100%; }
+}
+
+/* ── Feature: Language toggle ── */
+.lang-toggle { min-width: 38px; height: 38px; padding: 0 10px; border: 1px solid var(--line); border-radius: 10px; background: rgba(255,255,255,.65); color: #5f6f68; font-size: 11px; font-weight: 800; letter-spacing: .5px; }
+.lang-toggle:hover { background: white; border-color: #b9c9c1; color: var(--green); }
+
+/* ── Feature: PriceCatcher live price badge ── */
+.price-badge { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 18px; padding: 5px 11px; border-radius: 20px; font-size: 10px; font-weight: 700; letter-spacing: .3px; }
+.price-badge.live   { background: #dafbe1; color: #166534; border: 1px solid #a7f3d0; }
+.price-badge.static { background: #f7f8fa; color: #57606a; border: 1px solid #e5e7eb; }
+.price-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+.price-badge.live   .price-dot { background: #16a34a; animation: pulse-dot 2s ease-in-out infinite; }
+.price-badge.static .price-dot { background: #9ca3af; }
+@keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+
+/* ── Feature: WhatsApp share button ── */
+.wa-button { background: #25d366; border-color: #1faa52; }
+.wa-button:hover { background: #1da851; border-color: #178f44; transform: translateY(-1px); }

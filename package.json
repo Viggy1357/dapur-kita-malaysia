@@ -11,7 +11,9 @@
     "dev": "vite",
     "test": "node --test src/engine.test.js",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sync-prices": "node scripts/sync-prices.mjs",
+    "sync-prices:dry": "node scripts/sync-prices.mjs --dry-run"
   },
   "dependencies": {
     "lucide-react": "0.539.0",

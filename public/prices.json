@@ -1,0 +1,23 @@
+{
+  "fetchedAt": "2026-08-22T00:00:00.000Z",
+  "dateLabel": "22 Aug 2026",
+  "source": "Curated prototype snapshot — will be replaced by weekly PriceCatcher sync",
+  "apiUrl": "https://api.data.gov.my/data-catalogue?id=pricecatcher_week",
+  "prices": {
+    "rice": 8.00,
+    "eggs": 0.55,
+    "chicken": 14.50,
+    "cabbage": 5.40,
+    "carrot": 6.00,
+    "onion": 5.80,
+    "garlic": 11.00,
+    "tomato": 7.00,
+    "cucumber": 4.80,
+    "noodles": 2.50,
+    "sardines": 5.50,
+    "tuna": 6.20,
+    "coconutMilk": 3.20,
+    "mackerel": 16.00
+  },
+  "meta": {}
+}
